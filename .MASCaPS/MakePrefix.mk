@@ -67,7 +67,7 @@ LIB_PCAP_DIR	=	${LIB_BASE}
 
 # -----------------------------------------------------------------------------
 MLB_LIB_NAMES     =       Utility
-USE_XLIBS_FLAG    = 0
+USE_XLIBS_FLAG    = 1
 ifneq (${USE_XLIBS_FLAG}, 0)
    XLIB_BASE     := ${shell dirname ${MASCaPS_DIR_PARENT}}
    XLIB_LIST      = ${patsubst Utility,UtilityOld,${MLB_LIB_NAMES}}
